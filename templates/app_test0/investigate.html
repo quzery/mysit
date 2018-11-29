@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--引入本地css & js-->
+        <link rel="stylesheet" href="../../static/style/test_css.css" />
+        <!--script type="text/javascript" src="../static/javascript/medicine.js"></script-->
+<body>
+<form action="/app_test0/post_investigate/" method="post">
+    {%  csrf_token %}
+<input type="text" name="templay1" value="default">
+<input type="submit" value="Submit">
+</form>
+{% for foo in rlt1 %}
+    <p>{{ foo.id }}, {{ foo }}</p>
+{% endfor %}
+
+</body>

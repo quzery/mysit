@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../../static/style/login.css" />
+</head>
+
+<body>
+<form id="form_0" action="/login/" method="post">
+    {% csrf_token %}
+    {{ fm.as_p }}
+<input type="submit" value="Login">
+<!--input id="Sign_in_0" type="submit" value="Sign_in"-->
+</form>
+
+</body>
+</html>
